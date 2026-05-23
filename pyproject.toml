@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "audio-waveform-thumbnail"
+version = "0.1.0"
+description = "Generate waveform thumbnail PNGs from .mp4 or .wav audio sources."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+  { name = "AicodingTools" }
+]
+dependencies = []
+
+[project.scripts]
+audiowave-thumb = "audio_waveform_thumbnail.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
